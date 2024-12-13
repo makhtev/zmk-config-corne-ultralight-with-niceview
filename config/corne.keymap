@@ -9,7 +9,6 @@
 
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
@@ -56,22 +55,7 @@
 &kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P           &kp LEFT_BRACKET
 &kp TAB    &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H    &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
 &kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp BACKSLASH
-                                     &to 3         &mo 1         &kp SPACE    &kp RET  &mo 2         &kp RALT
-            >;
-        };
-
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6       &kp N7          &kp N8   &kp N9    &kp N0     &kp DEL
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PAGE_UP  &kp LEFT_ARROW  &kp UP   &kp DOWN  &kp RIGHT  &trans
-&kp LSHFT   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp PG_DN    &kp F6          &kp F7   &kp F8    &kp F9     &kp F10
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET      &kp BACKSPACE   &kp DEL
+                                     &to 2         &mo 3         &kp SPACE    &kp RET  &mo 1         &mo 2
             >;
         };
 
@@ -83,10 +67,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp SLASH
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp F1   &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp F7   &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp SLASH
+                           &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -96,6 +80,15 @@
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans       &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &msc SCRL_DOWN  &trans          &trans        &trans          &trans           &trans
                            &trans     &to 0      &kp SPACE    &trans          &trans          &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans     &kp N1  &kp N2  &kp N3  &trans    &trans  &kp HOME          &kp PG_UP       &kp PG_DN         &kp END           &trans
+&trans  &trans     &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LEFT_ARROW    &kp UP          &kp DOWN          &kp RIGHT         &trans
+&trans  &kp LCTRL  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &msc SCROLL_LEFT  &msc SCROLL_UP  &msc SCROLL_DOWN  &msc SCROLL_LEFT  &trans
+                           &trans  &trans  &trans    &trans  &kp BACKSPACE     &kp DEL
             >;
         };
     };
