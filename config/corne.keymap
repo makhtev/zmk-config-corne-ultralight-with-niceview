@@ -62,6 +62,210 @@
             key-positions = <1 0 2>;
             layers = <5>;
         };
+
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <22 21>;
+            layers = <0>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <21 20>;
+            layers = <0>;
+        };
+
+        col {
+            bindings = <&kp COLON>;
+            key-positions = <22 21 19>;
+            layers = <0>;
+        };
+
+        semicol {
+            bindings = <&kp SEMI>;
+            key-positions = <21 20 19>;
+            layers = <0>;
+        };
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <8 21>;
+            layers = <0>;
+        };
+
+        dqt {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <21 7>;
+            layers = <0>;
+        };
+
+        under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <18 18 20 19>;
+            layers = <0>;
+        };
+
+        brac {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <40 7>;
+            layers = <0>;
+        };
+
+        clbr {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <40 8>;
+            layers = <0>;
+        };
+
+        lftpr {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <40 19>;
+            layers = <0>;
+        };
+
+        rpt {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <40 20>;
+            layers = <0>;
+        };
+
+        lftbrs {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <40 31>;
+            layers = <0>;
+        };
+
+        rbrst {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <40 32>;
+            layers = <0>;
+        };
+
+        ats {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <7 20 21>;
+            layers = <0>;
+        };
+
+        amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <20 18>;
+            layers = <0>;
+        };
+
+        mul {
+            bindings = <&kp ASTERISK>;
+            key-positions = <30 31 32>;
+            layers = <0>;
+        };
+
+        hsh {
+            bindings = <&kp POUND>;
+            key-positions = <6 7 8>;
+            layers = <0>;
+        };
+
+        expl {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <7 8 21>;
+            layers = <0>;
+        };
+
+        qst {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20 9>;
+            layers = <0>;
+        };
+
+        dlr {
+            bindings = <&kp DOLLAR>;
+            key-positions = <9 31 32>;
+            layers = <0>;
+        };
+
+        slh {
+            bindings = <&kp SLASH>;
+            key-positions = <9 31 20>;
+            layers = <0>;
+        };
+
+        bkslh {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <20 7 33>;
+            layers = <0>;
+        };
+
+        ltcm {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <40 19 8>;
+            layers = <0>;
+        };
+
+        gtcm {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <39 7 20>;
+            layers = <0>;
+        };
+
+        pipcm {
+            bindings = <&kp PIPE>;
+            key-positions = <40 7 19>;
+            layers = <0>;
+        };
+
+        crt {
+            bindings = <&kp CARET>;
+            key-positions = <19 21 8>;
+            layers = <0>;
+        };
+
+        pctcm {
+            bindings = <&kp PERCENT>;
+            key-positions = <7 33>;
+            layers = <0>;
+        };
+
+        grx {
+            bindings = <&kp GRAVE>;
+            key-positions = <7 20>;
+            layers = <0>;
+        };
+
+        tild {
+            bindings = <&kp TILDE>;
+            key-positions = <19 9>;
+            layers = <0>;
+        };
+
+        numl {
+            bindings = <&mo 7>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        fnl {
+            bindings = <&mo 8>;
+            key-positions = <2 1>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -84,10 +288,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P           &kp LEFT_BRACKET
-&kp TAB    &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H    &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp BACKSLASH
-                                     &mo 2         &mo 3         &kp SPACE    &kp RET  &mo 1         &mo 4
+&kp ESC  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P           &kp LEFT_BRACKET
+&kp TAB  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H    &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
+&kp INS  &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp BACKSLASH
+                                   &mo 2         &mo 3         &kp SPACE    &kp RET  &mo 1         &mo 4
             >;
         };
 
@@ -148,6 +352,24 @@
 &trans    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
 &kp LALT  &trans     &kp N7  &kp N8  &kp N9  &kp B     &kp C   &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        numpad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+                        &trans  &trans  &trans    &trans  &kp N0  &trans
+            >;
+        };
+
+        fun_keys {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
